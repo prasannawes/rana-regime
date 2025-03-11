@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rana Regime in Nepal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Qianlong Emperor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
@@ -13,12 +13,13 @@
             padding: 0;
             color: white;
             text-align: center;
+            background: #111;
             overflow-x: hidden;
         }
 
         /* Parallax Background */
         .parallax {
-            background: url('https://i.imgur.com/Dt5OPov.jpeg') no-repeat center center fixed;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/a/a3/Qianlong_Emperor_in_Ceremonial_Armour_on_Horseback.jpg') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             display: flex;
@@ -33,21 +34,19 @@
 
         /* Navigation Bar */
         nav {
-    background: rgba(0, 0, 0, 0.95); /* Make sure the background remains dark */
-    padding: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease-in-out;
-}
-
+            background: rgba(0, 0, 0, 0.95);
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
 
         nav ul {
             list-style: none;
@@ -92,27 +91,7 @@
             line-height: 1.8;
         }
 
-        /* Button */
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #ff9800;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: 0.3s ease;
-            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5);
-        }
-
-        .btn:hover {
-            background: #e68900;
-            transform: scale(1.08);
-            box-shadow: 0 6px 15px rgba(255, 152, 0, 0.8);
-        }
-
-        /* Timeline Section */
+        /* Timeline */
         .timeline {
             position: relative;
             margin: 50px auto;
@@ -138,6 +117,7 @@
             border-radius: 8px;
             box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
             text-align: left;
+            margin-bottom: 20px;
         }
 
         .timeline-box:nth-child(odd) {
@@ -146,6 +126,26 @@
 
         .timeline-box:nth-child(even) {
             left: 50%;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5);
+        }
+
+        .btn:hover {
+            background: #e68900;
+            transform: scale(1.08);
+            box-shadow: 0 6px 15px rgba(255, 152, 0, 0.8);
         }
 
         /* Footer */
@@ -173,70 +173,52 @@
 
 <!-- Parallax Banner -->
 <div class="parallax">
-    Rana Regime in Nepal
+    Qianlong Emperor
 </div>
 
 <!-- Navigation Bar -->
 <nav>
-    <div>Rana Regime</div>
+    <div>Qianlong</div>
     <ul>
-        <li><a href="#about">History</a></li>
+        <li><a href="#about">Biography</a></li>
         <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#contact">Learn More</a></li>
+        <li><a href="#legacy">Legacy</a></li>
     </ul>
 </nav>
 
-<!-- History Section -->
+<!-- Biography Section -->
 <div class="container" id="about">
-    <h1>The Rana Regime (1846–1951)</h1>
-    <p>The Rana Regime was a period of autocratic rule in Nepal that lasted from 1846 to 1951. The Rana dynasty came to power after the Kot Massacre, in which Jung Bahadur Rana eliminated his rivals and took control as the Prime Minister.</p>
-    <p>The Ranas established a feudal system, suppressing democracy and limiting education. Nepal remained isolated while maintaining ties with British India.</p>
-    <p>The revolution of 1951, supported by democratic forces and King Tribhuvan, led to the downfall of the Rana rule, marking a major shift in Nepalese governance.</p>
+    <h1>Qianlong Emperor (1711–1799)</h1>
+    <p>Qianlong Emperor was one of the longest-reigning emperors in Chinese history, ruling the Qing Dynasty from 1735 to 1796. His reign marked the peak of Qing power, territorial expansion, and cultural flourishing.</p>
+    <p>Born as Hongli, he was well-educated in literature, calligraphy, and martial arts. His rule expanded China’s borders, strengthened governance, and saw remarkable artistic achievements.</p>
 </div>
 
 <!-- Timeline Section -->
 <div class="timeline" id="timeline">
     <div class="timeline-box">
-        <h2>1846 - Kot Massacre</h2>
-        <p>The massacre eliminated opposition and established Jung Bahadur Rana’s rule.</p>
+        <h2>1735 - Ascension</h2>
+        <p>Qianlong became emperor following the death of his father, the Yongzheng Emperor.</p>
     </div>
     <div class="timeline-box">
-        <h2>1856 - Nepal-British Treaty</h2>
-        <p>The Ranas strengthened their relationship with British India.</p>
+        <h2>1755-1760 - Xinjiang Campaign</h2>
+        <p>His military campaigns expanded China's borders, bringing Xinjiang under Qing control.</p>
     </div>
     <div class="timeline-box">
-        <h2>1934 - Limited Modernization</h2>
-        <p>Infrastructure development was initiated but remained limited to elites.</p>
-    </div>
-    <div class="timeline-box">
-        <h2>1951 - Revolution</h2>
-        <p>The democratic movement and King Tribhuvan overthrew the Rana regime.</p>
+        <h2>1796 - Abdication</h2>
+        <p>After 60 years, he abdicated in favor of his son, Jiaqing Emperor, but retained influence.</p>
     </div>
 </div>
 
-<!-- Learn More Button -->
-<div class="container" id="contact">
-    <p style="text-align: center;">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">Learn More</a>
-    </p>
+<!-- Legacy Section -->
+<div class="container" id="legacy">
+    <h2>Legacy</h2>
+    <p>Qianlong's reign left a lasting impact on China’s culture, art, and governance. His collection of artworks and literary projects preserved Chinese heritage for generations.</p>
 </div>
 
 <!-- Footer -->
 <footer>
-    &copy; 2025 Rana Regime Website | Designed by Prasanna
-
-<!-- Scroll Fix Script -->
-<script>
-    window.addEventListener("scroll", function () {
-        let nav = document.querySelector("nav");
-        if (window.scrollY > 50) {
-            nav.style.background = "rgba(0, 0, 0, 1)"; // Fully black on scroll
-        } else {
-            nav.style.background = "rgba(0, 0, 0, 0.95)"; // Slight transparency at the top
-        }
-    });
-</script>
+    &copy; 2025 Qianlong Emperor Website | Designed by Prasanna
+</footer>
 
 </body>
-</html>    
-
+</html>
