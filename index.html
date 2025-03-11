@@ -6,67 +6,91 @@
     <title>Rana Regime in Nepal</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        /* General Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://i.imgur.com/Dt5OPov.jpeg') no-repeat center center fixed;
-            background-size: cover;
             color: white;
             text-align: center;
-            animation: fadeIn 1.5s ease-in-out;
+            overflow-x: hidden;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        /* Parallax Background */
+        .parallax {
+            background: url('https://i.imgur.com/Dt5OPov.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px black;
+            animation: fadeIn 2s ease-in-out;
         }
 
-        header {
+        /* Navigation Bar */
+        nav {
             background: rgba(0, 0, 0, 0.9);
             padding: 15px;
-            font-size: 26px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             position: fixed;
             width: 100%;
             top: 0;
-            left: 0;
             z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        /* Section Styles */
         .container {
-            max-width: 850px;
-            margin: 120px auto 50px;
+            max-width: 900px;
+            margin: 100px auto;
             padding: 30px;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.8);
             border-radius: 12px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
             text-align: left;
             animation: slideUp 1s ease-in-out;
         }
 
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        h1 {
-            font-size: 34px;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 15px;
+        h1, h2 {
             color: #ffcc00;
         }
 
         p {
             font-size: 18px;
             line-height: 1.8;
-            margin-bottom: 15px;
         }
 
+        /* Button */
         .btn {
             display: inline-block;
             padding: 12px 24px;
@@ -86,37 +110,116 @@
             box-shadow: 0 6px 15px rgba(255, 152, 0, 0.8);
         }
 
+        /* Timeline Section */
+        .timeline {
+            position: relative;
+            margin: 50px auto;
+            width: 80%;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: #ffcc00;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-box {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: relative;
+            width: 45%;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+            text-align: left;
+        }
+
+        .timeline-box:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-box:nth-child(even) {
+            left: 50%;
+        }
+
+        /* Footer */
         footer {
             margin-top: 40px;
             padding: 15px;
             background: rgba(0, 0, 0, 0.85);
             font-size: 15px;
-            letter-spacing: 1px;
             text-transform: uppercase;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
 
-<header>
+<!-- Parallax Banner -->
+<div class="parallax">
     Rana Regime in Nepal
-</header>
+</div>
 
-<div class="container">
+<!-- Navigation Bar -->
+<nav>
+    <div>Rana Regime</div>
+    <ul>
+        <li><a href="#about">History</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#contact">Learn More</a></li>
+    </ul>
+</nav>
+
+<!-- History Section -->
+<div class="container" id="about">
     <h1>The Rana Regime (1846–1951)</h1>
-    <p>The *Rana Regime* was a period of autocratic rule in Nepal that lasted from *1846 to 1951*. The Rana dynasty came to power after the *Kot Massacre*, in which Jung Bahadur Rana eliminated his rivals and took control as the Prime Minister. This event marked the beginning of a hereditary rule where power remained within the Rana family for over a century.</p>
+    <p>The Rana Regime was a period of autocratic rule in Nepal that lasted from 1846 to 1951. The Rana dynasty came to power after the Kot Massacre, in which Jung Bahadur Rana eliminated his rivals and took control as the Prime Minister.</p>
+    <p>The Ranas established a feudal system, suppressing democracy and limiting education. Nepal remained isolated while maintaining ties with British India.</p>
+    <p>The revolution of 1951, supported by democratic forces and King Tribhuvan, led to the downfall of the Rana rule, marking a major shift in Nepalese governance.</p>
+</div>
 
-    <p>Under Rana rule, Nepal became *isolated from the outside world*, limiting foreign influence while maintaining close ties with the British in India. The Ranas established a feudal system, suppressing democracy and limiting education to the ruling elite. The monarchy was reduced to a mere figurehead, with the Rana Prime Ministers holding absolute power.</p>
+<!-- Timeline Section -->
+<div class="timeline" id="timeline">
+    <div class="timeline-box">
+        <h2>1846 - Kot Massacre</h2>
+        <p>The massacre eliminated opposition and established Jung Bahadur Rana’s rule.</p>
+    </div>
+    <div class="timeline-box">
+        <h2>1856 - Nepal-British Treaty</h2>
+        <p>The Ranas strengthened their relationship with British India.</p>
+    </div>
+    <div class="timeline-box">
+        <h2>1934 - Limited Modernization</h2>
+        <p>Infrastructure development was initiated but remained limited to elites.</p>
+    </div>
+    <div class="timeline-box">
+        <h2>1951 - Revolution</h2>
+        <p>The democratic movement and King Tribhuvan overthrew the Rana regime.</p>
+    </div>
+</div>
 
-    <p>Despite the authoritarian nature of the regime, the Ranas introduced some modernization efforts, such as the construction of roads, palaces, and legal systems. However, these developments primarily benefited the elite class. The common people remained oppressed, and there were no significant advancements in education, healthcare, or infrastructure for the general population.</p>
-
-    <p>The Rana rule eventually came to an end in 1951 after growing *political resistance* from democratic movements, including the Nepali Congress and King Tribhuvan's efforts. The *Revolution of 1951* led to the overthrow of the Rana regime, restoring democracy and the powers of the monarchy. This marked a significant turning point in Nepal’s political history.</p>
-
+<!-- Learn More Button -->
+<div class="container" id="contact">
     <p style="text-align: center;">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">Learn More</a>
     </p>
 </div>
 
+<!-- Footer -->
 <footer>
     &copy; 2025 Rana Regime Website | Designed by Prasanna
 </footer>
