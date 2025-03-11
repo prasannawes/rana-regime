@@ -1,34 +1,84 @@
-/* Footer */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qianlong Emperor</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+            background: #111;
+        }
+
+        /* Navigation */
+        nav {
+            background: black;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        .container {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #ffcc00;
+        }
+
+        /* Button */
+        .btn {
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        /* Footer */
         footer {
             margin-top: 40px;
             padding: 15px;
-            background: rgba(0, 0, 0, 0.85);
+            background: black;
             font-size: 15px;
             text-transform: uppercase;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
 
-<!-- Parallax Banner -->
-<div class="parallax">
-    Qianlong Emperor
-</div>
-
-<!-- Navigation Bar -->
+<!-- Navigation -->
 <nav>
-    <div>Qianlong</div>
     <ul>
         <li><a href="#about">Biography</a></li>
         <li><a href="#timeline">Timeline</a></li>
@@ -39,31 +89,21 @@
 <!-- Biography Section -->
 <div class="container" id="about">
     <h1>Qianlong Emperor (1711–1799)</h1>
-    <p>Qianlong Emperor was one of the longest-reigning emperors in Chinese history, ruling the Qing Dynasty from 1735 to 1796. His reign marked the peak of Qing power, territorial expansion, and cultural flourishing.</p>
-    <p>Born as Hongli, he was well-educated in literature, calligraphy, and martial arts. His rule expanded China’s borders, strengthened governance, and saw remarkable artistic achievements.</p>
+    <p>Qianlong was one of China's longest-reigning emperors. He expanded the empire and left a cultural legacy.</p>
 </div>
 
 <!-- Timeline Section -->
-<div class="timeline" id="timeline">
-    <div class="timeline-box">
-        <h2>1735 - Ascension</h2>
-        <p>Qianlong became emperor following the death of his father, the Yongzheng Emperor.</p>
-    </div>
-    <div class="timeline-box">
-        <h2>1755-1760 - Xinjiang Campaign</h2>
-        <p>His military campaigns expanded China's borders, bringing Xinjiang under Qing control.</p>
-    </div>
-    <div class="timeline-box">
-        <h2>1796 - Abdication</h2>
-        <p>After 60 years, he abdicated in favor of his son, Jiaqing Emperor, but retained influence.</p>
-    </div>
+<div class="container" id="timeline">
+    <h2>Timeline</h2>
+    <p><strong>1735</strong> - Ascended to the throne.</p>
+    <p><strong>1755-1760</strong> - Expanded Qing territory.</p>
+    <p><strong>1796</strong> - Abdicated after 60 years.</p>
 </div>
 
 <!-- Legacy Section -->
 <div class="container" id="legacy">
     <h2>Legacy</h2>
-    <p>Qianlong's reign left a lasting impact on China’s culture, art, and governance. His collection of artworks and literary projects preserved Chinese heritage for generations.</p>
-    <p><strong>Want to learn more?</strong> Click the button below:</p>
+    <p>Qianlong’s rule is remembered for its military success and artistic achievements.</p>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">Learn More</a>
 </div>
 
