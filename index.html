@@ -1,29 +1,133 @@
-<!-- Timeline Section -->
-<div class="container" id="timeline">
-    <h2>Timeline</h2>
-    <p><strong>1711</strong> - Born as Hongli.</p>
-    <p><strong>1735</strong> - Became Emperor of the Qing Dynasty.</p>
-    <p><strong>1755-1760</strong> - Conquered Xinjiang, expanding Qing control.</p>
-    <p><strong>1770s</strong> - Commissioned the Siku Quanshu, the largest collection of Chinese literature.</p>
-    <p><strong>1796</strong> - Abdicated in favor of his son, but remained influential.</p>
-    <p><strong>1799</strong> - Passed away at the age of 87.</p>
-</div>
-
-<!-- Legacy Section -->
-<div class="container" id="legacy">
-    <h2>Legacy</h2>
-    <p>Qianlong’s reign was a golden age for Chinese art and culture. He was a patron of the arts, calligraphy, and poetry, personally writing over 40,000 poems. He commissioned the restoration of historical sites, including the Forbidden City and the Summer Palace.</p>
-    <p>Despite his successes, his later years were criticized for corruption and extravagance, leading to the decline of the Qing Dynasty. Nevertheless, his military conquests and cultural contributions shaped China’s history.</p>
-    <p>Want to learn more? Click below:</p>
-    <p style="text-align: center;">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">Learn More</a>
-    </p>
-</div>
-
-<!-- Footer -->
-<footer>
-    &copy; 2025 Qianlong Emperor Website | Designed by Prasanna
-</footer>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Clone</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #141414;
+      color: #fff;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      background: rgba(20,20,20,0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    .logo {
+      color: #e50914;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    /* Hero Section */
+    .hero {
+      height: 70vh;
+      background: url('https://via.placeholder.com/1500x700') center center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      margin-top: 80px; /* space for fixed header */
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+    }
+    /* Movie Rows */
+    .section {
+      padding: 60px 20px;
+    }
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .movie-row {
+      display: flex;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+    .movie {
+      min-width: 200px;
+      margin-right: 10px;
+      transition: transform 0.3s;
+    }
+    .movie img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .movie:hover {
+      transform: scale(1.05);
+    }
+    /* Custom Scrollbar */
+    .movie-row::-webkit-scrollbar {
+      height: 8px;
+    }
+    .movie-row::-webkit-scrollbar-thumb {
+      background: #555;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Netflix</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">New & Popular</a>
+      <a href="#">My List</a>
+    </nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Featured Movie</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac elit non dolor convallis pharetra.</p>
+  </section>
+  
+  <!-- Movie Row: Trending Now -->
+  <section class="section">
+    <h2>Trending Now</h2>
+    <div class="movie-row">
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+1" alt="Movie 1"></div>
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+2" alt="Movie 2"></div>
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+3" alt="Movie 3"></div>
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+4" alt="Movie 4"></div>
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+5" alt="Movie 5"></div>
+    </div>
+  </section>
+  
+  <!-- Movie Row: New Releases -->
+  <section class="section">
+    <h2>New Releases</h2>
+    <div class="movie-row">
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+6" alt="Movie 6"></div>
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+7" alt="Movie 7"></div>
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+8" alt="Movie 8"></div>
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+9" alt="Movie 9"></div>
+      <div class="movie"><img src="https://via.placeholder.com/200x300?text=Movie+10" alt="Movie 10"></div>
+    </div>
+  </section>
 </body>
 </html>
