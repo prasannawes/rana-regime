@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rana Regime in Nepal</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #141e30, #243b55);
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
             text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         header {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             padding: 15px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: 600;
+            font-size: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
             position: fixed;
             width: 100%;
             top: 0;
@@ -30,47 +37,61 @@
         }
 
         .container {
-            max-width: 800px;
-            margin: 100px auto 50px;
-            padding: 20px;
+            max-width: 850px;
+            margin: 120px auto 50px;
+            padding: 30px;
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
             text-align: left;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         h1 {
-            font-size: 32px;
-            font-weight: 600;
+            font-size: 34px;
+            font-weight: 700;
             text-align: center;
+            margin-bottom: 15px;
+            color: #ffcc00;
         }
 
         p {
             font-size: 18px;
-            line-height: 1.6;
+            line-height: 1.8;
+            margin-bottom: 15px;
         }
 
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             background: #ff9800;
             color: white;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 8px;
             transition: 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5);
         }
 
         .btn:hover {
             background: #e68900;
-            transform: scale(1.1);
+            transform: scale(1.08);
+            box-shadow: 0 6px 15px rgba(255, 152, 0, 0.8);
         }
 
         footer {
-            margin-top: 30px;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.8);
-            font-size: 14px;
+            margin-top: 40px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.85);
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -82,18 +103,17 @@
 
 <div class="container">
     <h1>The Rana Regime (1846–1951)</h1>
-    <p>The **Rana Regime** was a period of autocratic rule in Nepal that lasted from **1846 to 1951**. The Rana dynasty came to power after the **Kot Massacre**, in which Jung Bahadur Rana eliminated his rivals and took control as the Prime Minister. This event marked the beginning of a hereditary rule where power remained within the Rana family for over a century.</p>
+    <p>The *Rana Regime* was a period of autocratic rule in Nepal that lasted from *1846 to 1951*. The Rana dynasty came to power after the *Kot Massacre*, in which Jung Bahadur Rana eliminated his rivals and took control as the Prime Minister. This event marked the beginning of a hereditary rule where power remained within the Rana family for over a century.</p>
 
-    <p>Under Rana rule, Nepal became **isolated from the outside world**, limiting foreign influence while maintaining close ties with the British in India. The Ranas established a feudal system, suppressing democracy and limiting education to the ruling elite. The monarchy was reduced to a mere figurehead, with the Rana Prime Ministers holding absolute power.</p>
+    <p>Under Rana rule, Nepal became *isolated from the outside world*, limiting foreign influence while maintaining close ties with the British in India. The Ranas established a feudal system, suppressing democracy and limiting education to the ruling elite. The monarchy was reduced to a mere figurehead, with the Rana Prime Ministers holding absolute power.</p>
 
     <p>Despite the authoritarian nature of the regime, the Ranas introduced some modernization efforts, such as the construction of roads, palaces, and legal systems. However, these developments primarily benefited the elite class. The common people remained oppressed, and there were no significant advancements in education, healthcare, or infrastructure for the general population.</p>
 
-    <p>The Rana rule eventually came to an end in 1951 after growing **political resistance** from democratic movements, including the Nepali Congress and King Tribhuvan's efforts. The **Revolution of 1951** led to the overthrow of the Rana regime, restoring democracy and the powers of the monarchy. This marked a significant turning point in Nepal’s political history.</p>
+    <p>The Rana rule eventually came to an end in 1951 after growing *political resistance* from democratic movements, including the Nepali Congress and King Tribhuvan's efforts. The *Revolution of 1951* led to the overthrow of the Rana regime, restoring democracy and the powers of the monarchy. This marked a significant turning point in Nepal’s political history.</p>
 
- <p style="text-align: center;">
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">Learn More</a>
-</p>
-
+    <p style="text-align: center;">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn">Learn More</a>
+    </p>
 </div>
 
 <footer>
